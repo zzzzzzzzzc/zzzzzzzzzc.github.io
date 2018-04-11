@@ -1,0 +1,27 @@
+@font-face {
+	font-family:jianzhi;
+	src: url(font/FZJZJW.TTF);
+}
+h2{
+	font-family: jianzhi;
+	text-align: center;
+	font-size: 36px;
+	color: #666;
+	letter-spacing: 10px;
+}
+h2 span,.author{color: #076BBC;}
+.author{
+	text-align: center;
+	color: #666;
+	font-family: "楷体";
+}
+p{font-family: "微软雅黑";}
+span{color: #f00;}
+.phone{
+	font-family: "楷体";
+	font-style: italic;
+	color: #666;
+	font-size: 16px;
+}
+.phone span{color: #076BBC;}
+hr{color: #ddd;}
