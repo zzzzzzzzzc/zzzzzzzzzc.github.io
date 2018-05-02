@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>音乐播放器</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;list-style: none;outline: none;}
+			div{
+				width: 500px;
+				height: 500px;
+				background: linear-gradient(blue 0%, yellow 100%);
+				margin: 5px auto;
+				position: relative;
+			}
+			.a{
+				width: 350px;
+				height: 350px;
+				background: #000000;
+				margin: auto;
+				border-radius: 30px;
+				position: absolute;
+				left: 0px;top: 0px;bottom: 0px;right: 0px
+			}
+			.b{
+				width: 300px;
+				height: 300px;
+				background: linear-gradient(red 0%,blue 100%);
+				margin: auto;
+				border-radius: 30px;
+				position: absolute;
+				left: 0px;top: 0px;bottom: 0px;right: 0px;
+			}
+			.c{
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background: white;
+				margin: auto;
+				position: absolute;
+				left: 0px;top: 0px;bottom: 0px;right: 0px;
+			}
+			.d{
+				width: 0;
+				height: 0;
+				border: 60px solid black;
+				border-top-color: transparent;
+				border-bottom-color: transparent;
+				border-right-color: transparent;
+				margin: auto;
+				position: absolute;
+				left: 60px;top: 0px;bottom: 0px;right: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="a">
+				<div class="b">
+					<div class="c">
+						<div class="d"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
