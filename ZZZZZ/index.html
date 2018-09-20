@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#clock {
+				width: 600px;
+				height: 600px;
+				background:   url(https://bestace.github.io/fed/ppt/demos/jsBase/img/clock.jpg);
+				background-size: 100%;
+				position: relative;
+			}
+			
+			#sec {
+				width: 4px;
+				height: 200px;
+				background-color: #f00;
+				position: absolute;
+				left: 300px;
+				bottom: 300px;
+				transform-origin: 50% bottom;
+				/*transform: rotate(30deg);*/
+			}
+			#min {
+				width: 8px;
+				height: 160px;
+				background-color: darkmagenta;
+				position: absolute;
+				left: 300px;
+				bottom: 300px;
+				transform-origin: 50% bottom;
+				/*transform: rotate(30deg);*/
+			}
+			#hour {
+				width: 12px;
+				height: 120px;
+				background-color: black;
+				position: absolute;
+				left: 300px;
+				bottom: 300px;
+				transform-origin: 50% bottom;
+				/*transform: rotate(30deg);*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="clock">
+			<div id="sec"></div>
+			<div id="min"></div>
+			<div id="hour"></div>
+		</div>
+		<script>
+			var oSec = document.getElementById("sec");
+			var oMin = document.getElementById("min");
+			var oHour = document.getElementById("hour");
+			function getNow1() {
+				now = new Date();
+				var sec = now.getSeconds();
+				oSec.style.transform="rotate("+sec*6+"deg)";
+				setTimeout(getNow1, 1000);
+			}
+			getNow1();
+			function getNow2() {
+				now = new Date();
+				var min = now.getMinutes();
+				oMin.style.transform="rotate("+min*6+"deg)"
+				setTimeout(getNow2, 1000);
+			}
+			getNow2();
+			function getNow3() {
+				now = new Date();
+				var hour = now.getHours();
+				oHour.style.transform="rotate("+hour*30+"deg)"
+				setTimeout(getNow3, 1000);
+			}
+			getNow3();
+		</script>
+	</body>
+</html>
